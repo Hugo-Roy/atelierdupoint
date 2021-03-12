@@ -1,0 +1,44 @@
+.header{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        &__image{
+            margin: auto 0 auto 0;
+            width: 15em;
+        }
+
+        &__title{
+            margin: auto 0 auto 0;
+            font-size: 70px;
+        }
+
+        &__menu{
+            margin: auto 0 auto 0;
+            font-size: 35px;
+
+            &__list{
+                display: flex;
+                justify-content: space-between;
+
+                &__item{
+                    margin-left: 25px;
+
+                    &__link{
+                        text-decoration: none;
+                        color: $main-text-color;
+                    }
+
+                    &__link:hover{
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
