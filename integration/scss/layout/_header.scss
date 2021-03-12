@@ -1,5 +1,6 @@
 .header{
     margin-top: 25px;
+    background-color: $background-color;
     display: flex;
     justify-content: space-evenly;
 
@@ -15,7 +16,9 @@
 
         &__title{
             margin: auto 0 auto 0;
+            font-family: $font-title;
             font-size: 70px;
+            text-transform: uppercase;
         }
 
         &__menu{
