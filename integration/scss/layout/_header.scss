@@ -1,7 +1,9 @@
 .header{
     margin-top: 25px;
+    margin-bottom: 6rem;
     background-color: $background-color;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 
     .logo{
@@ -9,32 +11,41 @@
         display: flex;
         justify-content: space-around;
 
-        &__image{
+        &__image1{
             margin: auto 0 auto 0;
-            width: 15em;
+            width: 20em;
+            transform: rotateY(180deg);
+            filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
+        }
+
+        &__image2{
+            margin: auto 0 auto 0;
+            width: 20em;
+            filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
         }
 
         &__title{
             margin: auto 0 auto 0;
             font-family: $font-title;
-            font-size: 70px;
-            text-transform: uppercase;
+            font-size: 6.5rem;
+            // text-transform: uppercase;
         }
 
         &__menu{
-            margin: auto 0 auto 0;
+            margin: auto;
             font-size: 35px;
 
             &__list{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
 
                 &__item{
-                    margin-left: 25px;
+                    padding: 15px;
 
                     &__link{
                         text-decoration: none;
                         color: $main-text-color;
+                        font-family: $font-main;
                     }
 
                     &__link:hover{

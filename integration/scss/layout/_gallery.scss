@@ -1,11 +1,13 @@
 .banner{
     width: 75%;
     margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
     &__title{
         margin: 35px;
         font-size: 50px;
+        font-family: $font-title;
         text-transform: uppercase;
     }
 }
