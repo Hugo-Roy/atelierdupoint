@@ -10,18 +10,19 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+        transition: all 1s ease-in;
 
         &__image1{
             margin: auto 0 auto 0;
             width: 20em;
             transform: rotateY(180deg);
-            filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
+            filter: invert(0.85);
         }
 
         &__image2{
             margin: auto 0 auto 0;
             width: 20em;
-            filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
+            filter: invert(0.85);
         }
 
         &__title{
@@ -46,13 +47,28 @@
                         text-decoration: none;
                         color: $main-text-color;
                         font-family: $font-main;
+                        transition: $standard;
+                        background-image: linear-gradient($sand, $black);
+                        background-size: 0% 0.1em;
+                        background-position-y: 100%;
+                        background-position-x: 50%;
+                        background-repeat: no-repeat;
+                        transition: all 0.4s ease-in;
+                        text-decoration: none;
                     }
 
                     &__link:hover{
-                        color: $hover-color;
+                        background-size: 100% 0.1em;
+                        color: $sand;
                     }
                 }
             }
         }
+    }
+
+    .logo:hover{
+        
+
+        filter: invert(56%) sepia(49%) saturate(465%) hue-rotate(3deg) brightness(96%) contrast(84%);
     }
 }

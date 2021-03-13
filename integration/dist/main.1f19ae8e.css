@@ -4695,9 +4695,29 @@ readers do not read off random characters that represent icons */
   font-family: "Josefin-Medium";
   src: url("/JosefinSans-Medium.5847b73a.ttf");
 }
+@font-face {
+  font-family: "Tangerine-Regular";
+  src: url("/Tangerine-Regular.333570d2.ttf");
+}
+@font-face {
+  font-family: "Tangerine-Bold";
+  src: url("/Tangerine-Bold.c26e46e6.ttf");
+}
+@font-face {
+  font-family: "Germinabunt";
+  src: url("/germinabunt-regular.9c1245d7.ttf");
+}
+@font-face {
+  font-family: "Hatolie";
+  src: url("/Hatolie.c469a242.ttf");
+}
+@font-face {
+  font-family: "Sherlock";
+  src: url("/Sherlock.7025d340.ttf");
+}
 body {
-  background-color: #272727;
-  color: #b29148;
+  background-color: #130700;
+  color: #d9d9d9;
   font-family: "Fondamento-Regular";
   width: 100%;
   height: 100%;
@@ -4707,7 +4727,7 @@ body {
 .header {
   margin-top: 25px;
   margin-bottom: 6rem;
-  background-color: #272727;
+  background-color: #130700;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -4716,21 +4736,22 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  transition: all 1s ease-in;
 }
 .header .logo__image1 {
   margin: auto 0 auto 0;
   width: 20em;
   transform: rotateY(180deg);
-  filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
+  filter: invert(0.85);
 }
 .header .logo__image2 {
   margin: auto 0 auto 0;
   width: 20em;
-  filter: invert(55%) sepia(88%) saturate(281%) hue-rotate(4deg) brightness(89%) contrast(85%);
+  filter: invert(0.85);
 }
 .header .logo__title {
   margin: auto 0 auto 0;
-  font-family: "Fondamento-Regular";
+  font-family: "Sherlock";
   font-size: 6.5rem;
 }
 .header .logo__menu {
@@ -4746,11 +4767,23 @@ body {
 }
 .header .logo__menu__list__item__link {
   text-decoration: none;
-  color: #b29148;
+  color: #d9d9d9;
   font-family: "Fondamento-Regular";
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(#b29148, #130700);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-in;
+  text-decoration: none;
 }
 .header .logo__menu__list__item__link:hover {
-  color: #d0bc90;
+  background-size: 100% 0.1em;
+  color: #b29148;
+}
+.header .logo:hover {
+  filter: invert(56%) sepia(49%) saturate(465%) hue-rotate(3deg) brightness(96%) contrast(84%);
 }
 
 .banner {
@@ -4783,6 +4816,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
+  filter: grayscale(1);
+  transition: all 1s ease-in-out;
+}
+.gallery__container__item img:hover {
+  filter: grayscale(0.4);
+  transition: all 0.4s ease-in-out;
 }
 .gallery__container .item-1 {
   grid-column: 1/4;
@@ -4819,6 +4859,30 @@ body {
 .gallery__container .item-9 {
   grid-column: 10/13;
   grid-row: 7/13;
+}
+
+.footer {
+  margin: 6em auto;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__disclaimer {
+  font-family: "Josefin-Medium";
+  text-align: center;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer__social__link {
+  color: #d9d9d9;
+  font-size: 50px;
+  padding: 25px;
+  transition: all 0.4s ease-in-out;
+}
+.footer__social__link:hover {
+  color: #b29148;
 }
 
 /*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -7,7 +7,7 @@
     &__title{
         margin: 35px;
         font-size: 50px;
-        font-family: $font-title;
+        font-family: $font-main;
         text-transform: uppercase;
     }
 }
@@ -28,7 +28,15 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 5px;
+                filter: grayscale(1);
+                transition: $double;
             }
+        }
+
+        &__item img:hover{
+            filter: grayscale(0.4);
+            transition: $standard;
         }
 
         .item-1{

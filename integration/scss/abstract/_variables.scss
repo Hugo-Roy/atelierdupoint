@@ -1,11 +1,15 @@
 // Colors
 $background-color: $black;
-$main-text-color: $sand;
+$main-text-color: $white;
 $hover-color: $light-sand;
 $background-main: $black;
 $header-font-color: $sand;
 
 // Fonts
-$font-title: "Fondamento-Regular";
+$font-title: "Sherlock";
 $font-main: "Fondamento-Regular";
 $font-footer: "Josefin-Medium";
+
+// Transition
+$standard: all .4s ease-in-out;
+$double: all 1s ease-in-out;
