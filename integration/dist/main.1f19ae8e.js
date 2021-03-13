@@ -200,7 +200,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/var/www/html/atelierdupoint/integration/fonts/CrimsonText-Regular.ttf":[["CrimsonText-Regular.e027f9ed.ttf","fonts/CrimsonText-Regular.ttf"],"fonts/CrimsonText-Regular.ttf"],"/var/www/html/atelierdupoint/integration/fonts/CrimsonText-Bold.ttf":[["CrimsonText-Bold.5c20a51e.ttf","fonts/CrimsonText-Bold.ttf"],"fonts/CrimsonText-Bold.ttf"],"/var/www/html/atelierdupoint/integration/fonts/CrimsonText-Italic.ttf":[["CrimsonText-Italic.2e3c772d.ttf","fonts/CrimsonText-Italic.ttf"],"fonts/CrimsonText-Italic.ttf"],"/var/www/html/atelierdupoint/integration/fonts/CrimsonText-SemiBold.ttf":[["CrimsonText-SemiBold.7bfc9e9f.ttf","fonts/CrimsonText-SemiBold.ttf"],"fonts/CrimsonText-SemiBold.ttf"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
+},{"/var/www/html/atelierdupoint/integration/fonts/Fondamento-Regular.ttf":[["Fondamento-Regular.cc708a85.ttf","fonts/Fondamento-Regular.ttf"],"fonts/Fondamento-Regular.ttf"],"/var/www/html/atelierdupoint/integration/fonts/Fondamento-Italic.ttf":[["Fondamento-Italic.53651c7d.ttf","fonts/Fondamento-Italic.ttf"],"fonts/Fondamento-Italic.ttf"],"/var/www/html/atelierdupoint/integration/fonts/JosefinSans-Regular.ttf":[["JosefinSans-Regular.fc1cd660.ttf","fonts/JosefinSans-Regular.ttf"],"fonts/JosefinSans-Regular.ttf"],"/var/www/html/atelierdupoint/integration/fonts/JosefinSans-Bold.ttf":[["JosefinSans-Bold.2a0ff58e.ttf","fonts/JosefinSans-Bold.ttf"],"fonts/JosefinSans-Bold.ttf"],"/var/www/html/atelierdupoint/integration/fonts/JosefinSans-MediumItalic.ttf":[["JosefinSans-MediumItalic.630e4bc2.ttf","fonts/JosefinSans-MediumItalic.ttf"],"fonts/JosefinSans-MediumItalic.ttf"],"/var/www/html/atelierdupoint/integration/fonts/JosefinSans-Medium.ttf":[["JosefinSans-Medium.5847b73a.ttf","fonts/JosefinSans-Medium.ttf"],"fonts/JosefinSans-Medium.ttf"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
 require("reset-css");
@@ -236,7 +236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43349" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35853" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
