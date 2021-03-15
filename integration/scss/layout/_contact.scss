@@ -1,0 +1,11 @@
+.contact{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 2em;
+
+    @include small-only{
+        font-size: 1.5em;
+    }
+}

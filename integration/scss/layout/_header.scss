@@ -6,35 +6,80 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    @include small-only{
+        margin-bottom: 0;
+    }
+
+    @include medium{
+        margin-bottom: 2em;
+    }
+
+    @include large{
+        margin-bottom: 2em;
+    }
+
     .logo{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        transition: all 1s ease-in;
+        transition: all 0.6s ease-in;
+
+        @include large{
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        @include small-only{
+            text-align: center;
+        }
 
         &__image1{
             margin: auto 0 auto 0;
             width: 20em;
             transform: rotateY(180deg);
             filter: invert(0.85);
+
+            @include small-only{
+                width: 10em;
+            }
         }
 
         &__image2{
+            @include large{
             margin: auto 0 auto 0;
             width: 20em;
             filter: invert(0.85);
+            display: initial;
+            }
+
+            @include medium{
+                display: none;
+            }
+
+            @include small-only{
+                display: none;
+            }
         }
 
         &__title{
             margin: auto 0 auto 0;
             font-family: $font-title;
             font-size: 6.5rem;
-            // text-transform: uppercase;
+            text-decoration: overline underline;
+            
+            @include small-only{
+                font-size: 3em;
+            }
+
         }
 
         &__menu{
             margin: auto;
-            font-size: 35px;
+            font-size: 3em;
+
+            @include small-only{
+                font-size: 1.5em;
+            }
 
             &__list{
                 display: flex;
@@ -49,12 +94,11 @@
                         font-family: $font-main;
                         transition: $standard;
                         background-image: linear-gradient($sand, $black);
-                        background-size: 0% 0.1em;
+                        background-size: 0% .1em;
                         background-position-y: 100%;
                         background-position-x: 50%;
                         background-repeat: no-repeat;
-                        transition: all 0.4s ease-in;
-                        text-decoration: none;
+                        transition: all 0.3s ease-in;
                     }
 
                     &__link:hover{
