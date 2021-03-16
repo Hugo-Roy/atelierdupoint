@@ -1,0 +1,208 @@
+.banner{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__title{
+        margin: 35px;
+        font-size: 4em;
+        font-family: $font-main;
+        
+        @include small-only{
+            font-size: 2.3em;
+        }
+    }
+
+    &__p{
+        margin-bottom: 25px;
+        font-size: 1.5em;
+    }
+}
+
+.gallery{
+    width: 85%;
+    margin: auto;
+
+    @include small-only{
+        width: 95%;
+    }
+
+    @include medium{
+        width: 95%;
+    }
+
+    @include large{
+        width: 95%;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 5vw);
+        grid-gap: 15px;
+
+        @include small-only{
+            grid-template-rows: repeat(21, 8vw);
+            grid-gap: 5px;
+        }
+
+        &__item{
+            width: auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+                filter: grayscale(1);
+                transition: $double;
+
+                &:hover{
+                    filter: grayscale(0.4);
+                    transition: $standard;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .modal{
+            margin: auto;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, .9);
+        }
+
+        .modal-content{
+            margin: auto;
+            padding: 50px 0;
+            display: block;
+            width: 80%;
+            max-width: 600px;
+            animation-name: zoom;
+            animation-duration: .6s;
+        }
+
+        @keyframes zoom{
+            from {transform: scale(0);}
+            to {transform: scale(1);}
+        }
+
+        .close{
+            position: fixed;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .close:hover, .close:focus{
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+
+            @include small-only{
+                width: 100%;
+            }
+        }
+
+        .item-1{
+            grid-column: 1 / 4;
+            grid-row: 1 / 7;
+
+            @include small-only{
+                grid-column: 1 / 7;
+                grid-row: 1 / 6;
+            }
+        }
+
+        .item-2{
+            grid-column: 4 / 7;
+            grid-row: 1 / 5;
+
+            @include small-only{
+                grid-column: 7 / 13;
+                grid-row: 1 / 6;
+            }
+        }
+
+        .item-3{
+            grid-column: 7 / 10;
+            grid-row: 1 / 5;
+
+            @include small-only{
+                grid-column: 1 / 7;
+                grid-row: 6 / 11;
+            }
+        }
+
+        .item-4{
+            grid-column: 10 / 13;
+            grid-row: 1 / 7;
+
+            @include small-only{
+                grid-column: 7 / 13;
+                grid-row: 6 / 11;
+            }
+        }
+
+        .item-5{
+            grid-column: 4 / 10;
+            grid-row: 5 / 9;
+
+            @include small-only{
+                grid-column: 1 / 7;
+                grid-row: 11 / 16;
+            }
+        }
+
+        .item-6{
+            grid-column: 4 / 7;
+            grid-row: 9 / 13;
+
+            @include small-only{
+                grid-column: 7 / 13;
+                grid-row: 11 / 16;
+            }
+        }
+
+        .item-7{
+            grid-column: 7 / 10;
+            grid-row: 9 / 13;
+
+            @include small-only{
+                grid-column: 1 / 7;
+                grid-row: 16 / 21;
+            }
+        }
+
+        .item-8{
+            grid-column: 1 / 4;
+            grid-row: 7 / 13;
+
+            @include small-only{
+                grid-column: 7 / 13;
+                grid-row: 16 / 21;
+            }
+        }
+
+        .item-9{
+            grid-column: 10 / 13;
+            grid-row: 7 / 13;
+
+            @include small-only{
+                display: none;
+            }
+        }
+    }
+}
