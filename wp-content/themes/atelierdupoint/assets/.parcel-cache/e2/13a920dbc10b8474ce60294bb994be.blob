@@ -78,7 +78,7 @@ body {
 }
 @media (min-width: 900px) {
   .header {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
 }
 .header .logo {
@@ -89,7 +89,6 @@ body {
 }
 @media (min-width: 900px) {
   .header .logo {
-    margin-bottom: 1em;
     text-align: center;
   }
 }
@@ -191,6 +190,7 @@ body {
 }
 @media (max-width: 599px) {
   .banner__title {
+    padding-top: 1em;
     font-size: 2.3em;
   }
 }
@@ -198,6 +198,7 @@ body {
   margin-bottom: 25px;
   font-size: 1.5em;
   font-family: "Germinabunt";
+  color: #d9d9d9;
 }
 
 .gallery {
@@ -407,6 +408,7 @@ body {
 .footer__disclaimer {
   font-family: "Josefin-Medium";
   text-align: center;
+  color: #d9d9d9;
 }
 .footer__social {
   display: flex;

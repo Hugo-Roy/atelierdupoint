@@ -13,6 +13,7 @@
         color: $main-text-color;
         
         @include small-only{
+            padding-top: 1em;
             font-size: 2.3em;
         }
     }
@@ -21,6 +22,7 @@
         margin-bottom: 25px;
         font-size: 1.5em;
         font-family: $font-main;
+        color: $main-text-color;
     }
 }
 
