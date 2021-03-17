@@ -22,6 +22,22 @@
     },
     "require": {
         "johnpbloch/wordpress": "^5.6",
-        "wpackagist-theme/twentytwentyone": "^1.1"
+        "wpackagist-theme/twentytwentyone": "^1.1",
+        "wpackagist-plugin/fakerpress": "^0.5.0",
+        "wpackagist-plugin/query-monitor": "^3.6",
+        "wpackagist-plugin/show-current-template": "^0.3.4"
+    },
+    "scripts": {
+        "reactivate-plugins": [
+            "wp plugin deactivate --all",
+            "wp plugin activate --all"
+        ],
+        "permissions": [
+            "sudo chown -R $USER:www-data .",
+            "sudo find . -type f -exec chmod 664 {} +",
+            "sudo find . -type d -exec chmod 775 {} +",
+            "sudo chmod 644 .htaccess"
+        ],
+        "build-assets": "cd wp-content/themes/atelierdupoint/assets && parcel build main.js --public-url=./"
     }
 }

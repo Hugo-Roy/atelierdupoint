@@ -1,0 +1,4 @@
+require('reset-css');
+require('@fortawesome/fontawesome-free/css/all.css');
+require('./js/imageZoom');
+require('./scss/main.scss');

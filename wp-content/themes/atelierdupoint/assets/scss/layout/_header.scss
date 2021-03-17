@@ -1,7 +1,7 @@
 .header{
     margin-top: 25px;
     margin-bottom: 6rem;
-    background-color: $background-color;
+    // background-color: $background-color;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -65,6 +65,7 @@
             margin: auto 0 auto 0;
             font-family: $font-title;
             font-size: 6.5rem;
+            color: $main-text-color;
             text-decoration: overline underline;
             
             @include small-only{
