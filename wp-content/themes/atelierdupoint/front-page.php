@@ -33,7 +33,7 @@
             <img class="gallery__container__item__image" src="./wp-content/themes/atelierdupoint/assets/images/armTattoo.JPG" alt="tatouage ornemental sur le bras" id="myImg9">
         </div>
         <div class="modal" id="myModal">
-            <span class="close">&times;</span>
+            <span class="close" id="span">&times;</span>
             <img class="modal-content" id="img01">
         </div>
     </div>

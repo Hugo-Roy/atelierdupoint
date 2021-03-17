@@ -7,6 +7,7 @@
         <a href="javascript:void(0)" class="footer__social__link"><i class="fab fa-instagram-square"></i></a>
     </div>
 </footer>
+<script src="wp-content/themes/atelierdupoint/assets/js/imageZoom.js"></script>
 <?php wp_footer() ?>
 </body>
 </html>
