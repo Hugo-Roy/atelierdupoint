@@ -296,92 +296,92 @@ body {
     width: 100%;
   }
 }
-.gallery__container .item-1 {
+.gallery__container .item-0 {
   grid-column: 1/4;
   grid-row: 1/7;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-1 {
+  .gallery__container .item-0 {
     grid-column: 1/7;
+    grid-row: 1/6;
+  }
+}
+.gallery__container .item-1 {
+  grid-column: 4/7;
+  grid-row: 1/5;
+}
+@media (max-width: 599px) {
+  .gallery__container .item-1 {
+    grid-column: 7/13;
     grid-row: 1/6;
   }
 }
 .gallery__container .item-2 {
-  grid-column: 4/7;
+  grid-column: 7/10;
   grid-row: 1/5;
 }
 @media (max-width: 599px) {
   .gallery__container .item-2 {
-    grid-column: 7/13;
-    grid-row: 1/6;
-  }
-}
-.gallery__container .item-3 {
-  grid-column: 7/10;
-  grid-row: 1/5;
-}
-@media (max-width: 599px) {
-  .gallery__container .item-3 {
     grid-column: 1/7;
     grid-row: 6/11;
   }
 }
-.gallery__container .item-4 {
+.gallery__container .item-3 {
   grid-column: 10/13;
   grid-row: 1/7;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-4 {
+  .gallery__container .item-3 {
     grid-column: 7/13;
     grid-row: 6/11;
   }
 }
-.gallery__container .item-5 {
+.gallery__container .item-4 {
   grid-column: 4/10;
   grid-row: 5/9;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-5 {
+  .gallery__container .item-4 {
     grid-column: 1/7;
     grid-row: 11/16;
   }
 }
-.gallery__container .item-6 {
+.gallery__container .item-5 {
   grid-column: 4/7;
   grid-row: 9/13;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-6 {
+  .gallery__container .item-5 {
     grid-column: 7/13;
     grid-row: 11/16;
   }
 }
-.gallery__container .item-7 {
+.gallery__container .item-6 {
   grid-column: 7/10;
   grid-row: 9/13;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-7 {
+  .gallery__container .item-6 {
     grid-column: 1/7;
     grid-row: 16/21;
   }
 }
-.gallery__container .item-8 {
+.gallery__container .item-7 {
   grid-column: 1/4;
   grid-row: 7/13;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-8 {
+  .gallery__container .item-7 {
     grid-column: 7/13;
     grid-row: 16/21;
   }
 }
-.gallery__container .item-9 {
+.gallery__container .item-8 {
   grid-column: 10/13;
   grid-row: 7/13;
 }
 @media (max-width: 599px) {
-  .gallery__container .item-9 {
+  .gallery__container .item-8 {
     display: none;
   }
 }
