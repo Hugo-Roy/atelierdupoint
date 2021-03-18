@@ -8,4 +8,8 @@
     @include small-only{
         font-size: 1.5em;
     }
+
+    p{
+        color: $main-text-color;
+    }
 }

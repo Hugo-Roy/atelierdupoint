@@ -5,4 +5,3 @@ wp_nav_menu([
     'container'  => 'nav',
     'container_class' => 'logo__menu',
 ]);
-?>
