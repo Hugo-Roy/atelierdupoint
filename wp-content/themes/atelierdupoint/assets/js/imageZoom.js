@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function show() {
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.srcset = this.srcset;
 }
 
 let span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
-    modalImg.src = "";
+    modalImg.srcset = "";
 }

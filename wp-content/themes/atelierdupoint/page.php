@@ -1,7 +1,7 @@
-<?php get_header() ?>
+<?php get_header('front-page') ?>
 <section class="banner">
-    <h2 class="banner__title">Tatouages</h2>
-    <p class="banner__p">Cliquer pour agrandir</p>
+    <h2 class="banner__title"><?= the_title() ?></h2>
+    <p class="banner__p">cliquer pour agrandir</p>
 </section>
 <main class="gallery">
     <div class="gallery__container">

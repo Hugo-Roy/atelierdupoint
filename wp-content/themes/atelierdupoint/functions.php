@@ -6,3 +6,4 @@ define('ATELER_ASSETS_JS', get_template_directory_uri() . 'assets/js');
 require __DIR__ . '/inc/menus.php';
 require __DIR__ . '/inc/scripts.php';
 require __DIR__ . '/inc/supports.php';
+require __DIR__ . '/inc/custom-header.php';

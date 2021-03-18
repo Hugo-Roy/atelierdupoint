@@ -2,7 +2,7 @@
     <?php get_template_part('template-parts/footer/disclaimer');
     get_template_part('template-parts/footer/social-links') ?>
 </footer>
-<script src="wp-content/themes/atelierdupoint/assets/js/imageZoom.js"></script>
+<script src="<?= get_theme_file_uri('/assets/js/imageZoom.js') ?>"></script>
 <?php wp_footer() ?>
 </body>
 
