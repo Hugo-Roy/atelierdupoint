@@ -216,10 +216,13 @@ body {
     width: 95%;
   }
 }
+.gallery .flashs {
+  grid-template-rows: repeat(12, 5vw);
+}
 .gallery__container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 5vw);
+  grid-template-rows: repeat(24, 5vw);
   grid-gap: 15px;
 }
 @media (max-width: 599px) {
@@ -380,6 +383,42 @@ body {
   .gallery__container .item-8 {
     display: none;
   }
+}
+.gallery__container .item-9 {
+  grid-column: 1/4;
+  grid-row: 13/19;
+}
+.gallery__container .item-10 {
+  grid-column: 4/7;
+  grid-row: 13/17;
+}
+.gallery__container .item-11 {
+  grid-column: 7/10;
+  grid-row: 13/17;
+}
+.gallery__container .item-12 {
+  grid-column: 10/13;
+  grid-row: 13/19;
+}
+.gallery__container .item-13 {
+  grid-column: 4/10;
+  grid-row: 17/21;
+}
+.gallery__container .item-14 {
+  grid-column: 1/4;
+  grid-row: 19/25;
+}
+.gallery__container .item-15 {
+  grid-column: 4/7;
+  grid-row: 21/25;
+}
+.gallery__container .item-16 {
+  grid-column: 7/10;
+  grid-row: 21/25;
+}
+.gallery__container .item-17 {
+  grid-column: 10/13;
+  grid-row: 19/25;
 }
 .contact {
   width: 75%;
