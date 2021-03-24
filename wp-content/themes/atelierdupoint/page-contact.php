@@ -1,4 +1,4 @@
-<?php get_header('front-page') ?>
+<?php get_header('main') ?>
 <section class="banner">
     <h2 class="banner__title"><?= the_title() ?></h2>
 </section>

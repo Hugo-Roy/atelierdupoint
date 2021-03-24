@@ -49,7 +49,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #130700 !important;
+  background-image: url("e78cf486096c5e11af4698968bc34ad5") !important;
+  background-size: cover !important;
+  background-position-y: center !important;
+  background-attachment: fixed;
+  background-color: #091219 !important;
   color: #d9d9d9;
   font-family: "Germinabunt";
   width: 100%;
@@ -157,7 +161,7 @@ body {
   color: #d9d9d9;
   font-family: "Germinabunt";
   transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(#b29148, #130700);
+  background-image: linear-gradient(#b29148, #091219);
   background-size: 0% 0.1em;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -460,17 +464,119 @@ body {
   color: #b29148;
 }
 .front {
-  width: 85%;
-  margin: auto;
+  overflow-y: hidden;
 }
-.front__container {
+.header {
+  margin-top: 25px;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 599px) {
+  .header {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .header {
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 900px) {
+  .header {
+    margin-bottom: 4em;
+  }
+}
+.header .logo {
   width: 100%;
-  margin: auto;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.6s ease-in;
 }
-.front__container__logo {
-  width: 55%;
+@media (min-width: 900px) {
+  .header .logo {
+    text-align: center;
+  }
+}
+@media (max-width: 599px) {
+  .header .logo {
+    text-align: center;
+  }
+}
+.header .logo__image1 {
+  margin: auto 0 auto 0;
+  width: 20em;
+  transform: rotateY(180deg);
+  filter: invert(0.85);
+}
+@media (max-width: 599px) {
+  .header .logo__image1 {
+    width: 10em;
+  }
+}
+@media (min-width: 900px) {
+  .header .logo__image2 {
+    margin: auto 0 auto 0;
+    width: 20em;
+    filter: invert(0.85);
+    display: initial;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .header .logo__image2 {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .header .logo__image2 {
+    display: none;
+  }
+}
+.header .logo__title {
+  margin: auto 0 auto 0;
+  font-family: "Sherlock";
+  font-size: 6.5rem;
+  color: #d9d9d9;
+  text-decoration: overline underline;
+}
+@media (max-width: 599px) {
+  .header .logo__title {
+    font-size: 3em;
+  }
+}
+.header .logo__menu {
   margin: auto;
-  filter: invert(0.75);
-  border-radius: 45%;
+  font-size: 3em;
+}
+@media (max-width: 599px) {
+  .header .logo__menu {
+    font-size: 1.5em;
+  }
+}
+.header .logo__menu__list {
+  display: flex;
+  justify-content: center;
+}
+.header .logo__menu__list__item {
+  padding: 15px;
+}
+.header .logo__menu__list__item a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-family: "Germinabunt";
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(#b29148, #091219);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in;
+}
+.header .logo__menu__list__item a:hover {
+  background-size: 100% 0.1em;
+  color: #b29148;
+}
+.header .logo:hover {
+  filter: invert(56%) sepia(49%) saturate(465%) hue-rotate(3deg) brightness(96%) contrast(84%);
 }

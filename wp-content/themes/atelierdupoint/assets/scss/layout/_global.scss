@@ -3,6 +3,10 @@
 }
 
 body{
+    background-image: $bg-image !important;
+    background-size: cover !important;
+    background-position-y: center !important;
+    background-attachment: fixed !important;
     background-color: $background-main !important;
     color: $main-text-color;
     font-family: $font-main;
