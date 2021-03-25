@@ -54,17 +54,13 @@ body {
   background-size: cover !important;
   background-position-y: center !important;
   background-attachment: fixed !important;
-  background-color: #270202 !important;
+  background-color: #1b0101 !important;
   color: #d9d9d9;
   font-family: "Germinabunt";
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   margin: auto;
-}
-
-.front {
-  overflow-y: hidden;
 }
 
 .header {
@@ -148,6 +144,11 @@ body {
     text-decoration: overline underline 1.5px;
   }
 }
+@media (min-width: 600px) and (max-width: 899px) {
+  .header .logo__title {
+    text-align: center;
+  }
+}
 .header .logo__menu {
   margin: auto;
   font-size: 3em;
@@ -155,7 +156,7 @@ body {
 }
 @media (max-width: 599px) {
   .header .logo__menu {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 .header .logo__menu__list {
@@ -170,7 +171,7 @@ body {
   color: #d9d9d9;
   font-family: "Germinabunt";
   transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(#BEA060, #270202);
+  background-image: linear-gradient(#BEA060, #1b0101);
   background-size: 0% 0.1em;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -220,6 +221,17 @@ body {
   .banner__front {
     padding-top: 1em;
     font-size: 3em;
+  }
+}
+.banner__front__home {
+  font-size: 1.5em;
+  font-family: "Josefin-Medium";
+  color: #d9d9d9;
+  text-align: center;
+}
+@media (max-width: 599px) {
+  .banner__front__home {
+    font-size: 1.2em;
   }
 }
 .banner__p {
@@ -606,12 +618,12 @@ body {
   width: 75%;
   margin: auto;
   text-align: center;
-  font-family: "Germinabunt";
-  font-size: 2em;
+  font-family: "Josefin-Medium";
+  font-size: 1.5em;
 }
 @media (max-width: 599px) {
   .contact {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 .contact p {

@@ -34,6 +34,17 @@
             padding-top: 1em;
             font-size: 3em;
         }
+
+        &__home{
+            font-size: 1.5em;
+            font-family: $font-footer;
+            color: $main-text-color;
+            text-align: center;
+
+            @include small-only{
+                font-size: 1.2em;
+            }
+        }
     }
 
     &__p{
